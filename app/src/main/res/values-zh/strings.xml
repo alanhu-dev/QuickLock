@@ -2,9 +2,5 @@
 <resources>
     <string name="accessibility_service_description">需透過 Accessibility Service 才能鎖定螢幕。</string>
 
-    <string name="app_name">螢幕鎖定</string>
-
-    <string name="exception">鎖定螢幕失敗, 此裝置可能不支援。</string>
-
-    <string name="launcher">鎖定</string>
+    <string name="app_name">鎖定</string>
 </resources>

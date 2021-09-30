@@ -9,9 +9,9 @@
 
         <activity
             android:name="com.superyao.quicklock.MainActivity"
-            android:label="@string/launcher"
             android:excludeFromRecents="true"
-            android:noHistory="true">
+            android:noHistory="true"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,8 @@
 
         <service
             android:name="com.superyao.quicklock.ScreenLock"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />

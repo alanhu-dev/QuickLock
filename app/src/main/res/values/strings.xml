@@ -2,9 +2,5 @@
 <resources>
     <string name="accessibility_service_description">The app used Accessibility Service to lock the screen.</string>
 
-    <string name="app_name">Screen Lock</string>
-
-    <string name="exception">Lock the screen failed, this device may not be supported.</string>
-
-    <string name="launcher">Lock</string>
+    <string name="app_name">Lock</string>
 </resources>
