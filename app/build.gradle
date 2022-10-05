@@ -6,13 +6,13 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     buildToolsVersion '31.0.0'
 
     defaultConfig {
         applicationId "com.superyao.quicklock"
         minSdkVersion 28
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 3
         versionName '1.0.1'
 
@@ -49,4 +49,5 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+    namespace 'com.superyao.quicklock'
 }
