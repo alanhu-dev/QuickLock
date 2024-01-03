@@ -7,13 +7,12 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     namespace 'com.superyao.quicklock'
-    compileSdkVersion 33
-    buildToolsVersion '33.0.0'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.superyao.quicklock"
-        minSdkVersion 28
-        targetSdkVersion 33
+        minSdk 28
+        targetSdk 34
         versionCode 4
         versionName '1.1.0'
 
