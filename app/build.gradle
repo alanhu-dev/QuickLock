@@ -51,3 +51,7 @@ android {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 }
+
+dependencies {
+    implementation 'com.google.android.material:material:1.11.0'
+}
