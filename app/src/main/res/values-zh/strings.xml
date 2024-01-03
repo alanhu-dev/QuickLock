@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-    <string name="accessibility_service_description">需透過 Accessibility Service 才能鎖定螢幕。</string>
+    <string name="accessibility_service_description">本應用透過 AccessibilityService API 來鎖定螢幕。</string>
 
     <string name="app_name">鎖定</string>
 </resources>
