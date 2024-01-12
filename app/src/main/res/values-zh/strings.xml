@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-    <string name="accessibility_service_description">本應用透過 AccessibilityService API 來鎖定螢幕。</string>
+    <string name="accessibility_service_description">QuickLock 需要使用 AccessibilityService API 來鎖定螢幕。</string>
+    <string name="accessibility_service_guide">QuickLock 需要使用 AccessibilityService API 來鎖定螢幕。按下同意後，將引到您到無障礙設定頁面進行啟用。</string>
 
-    <string name="app_name">鎖定</string>
+    <string name="guide_agree">同意</string>
+    <string name="guide_decline">拒絕</string>
 </resources>

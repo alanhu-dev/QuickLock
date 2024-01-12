@@ -19,9 +19,9 @@ class MainActivity : Activity() {
     private fun showGuide() {
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.app_name)
-            .setMessage(R.string.accessibility_service_description)
-            .setPositiveButton(android.R.string.ok) { _, _ -> lockScreen() }
-            .setNegativeButton(android.R.string.cancel) { _, _ -> finish() }
+            .setMessage(R.string.accessibility_service_guide)
+            .setPositiveButton(R.string.guide_agree) { _, _ -> lockScreen() }
+            .setNegativeButton(R.string.guide_decline) { _, _ -> finish() }
             .setCancelable(false)
             .show()
     }

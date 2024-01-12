@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-    <string name="accessibility_service_description">The app used AccessibilityService API to lock the device.</string>
+    <string name="accessibility_service_description">QuickLock requires the use of the AccessibilityService API to lock the screen.</string>
+    <string name="accessibility_service_guide">QuickLock requires the use of the AccessibilityService API to lock the screen. After pressing \'Agree\', you will be redirected to the Accessibility Settings page to enable this feature.</string>
 
-    <string name="app_name">Lock</string>
+    <string name="app_name" translatable="false">QuickLock</string>
+
+    <string name="guide_agree">Agree</string>
+    <string name="guide_decline">Decline</string>
 </resources>
