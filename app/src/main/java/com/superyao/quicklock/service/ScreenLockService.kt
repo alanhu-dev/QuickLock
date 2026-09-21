@@ -9,12 +9,19 @@ import android.view.accessibility.AccessibilityEvent
 
 class ScreenLockService : AccessibilityService() {
 
-    override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        // A system restart may supply no intent; it is not a new lock request.
+        if (intent == null) return START_NOT_STICKY
+
         if (!performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)) {
-            startActivity(Intent(ACTION_ACCESSIBILITY_SETTINGS)
-                    .addFlags(Intent.FLAG_RECEIVER_FOREGROUND))
+            startActivity(
+                Intent(ACTION_ACCESSIBILITY_SETTINGS)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            )
         }
-        return super.onStartCommand(intent, flags, startId)
+
+        // Locking is a one-shot action and must not be repeated after process death.
+        return START_NOT_STICKY
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent) {
