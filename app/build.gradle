@@ -9,6 +9,10 @@ android {
     namespace 'com.superyao.quicklock'
     compileSdk 37
 
+    buildFeatures {
+        buildConfig true
+    }
+
     defaultConfig {
         applicationId "com.superyao.quicklock"
         minSdk 28
